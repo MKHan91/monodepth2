@@ -54,7 +54,8 @@ class MonoDataset(data.Dataset):
         self.height = height
         self.width = width
         self.num_scales = num_scales
-        self.interp = Image.ANTIALIAS
+        # self.interp = Image.ANTIALIAS
+        self.interp = Image.BILINEAR
 
         self.frame_idxs = frame_idxs
 
